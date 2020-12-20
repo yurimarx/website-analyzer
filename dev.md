@@ -51,5 +51,3 @@ zn "%SYS" \
   write "Web application "_webName_" has been created!",! 
 ```
 
-zw ##class(community.csvgen).GenerateFromURL("https://github.com/h2oai/h2o-tutorials/raw/master/h2o-world-2017/automl/data/product_backorders.csv")
-
