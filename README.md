@@ -27,3 +27,16 @@ $ docker-compose build
 ```
 $ docker-compose up -d
 ```
+## How to Run the Ocr Production
+
+1. Open the [production](http://localhost:52773/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=dc.WebsiteAnalyzer.WebsiteAnalyzerProduction) 
+
+2. Set Depth and TotalPages to the Crawler. Depth is how many subpages will be crawled and TotalPages is how many pages will be processed. Tip: start with Depth 0 and 5 pages, to be a fast initial test.
+
+3. Start the production.
+
+4. Now Open Postman or create a request in a browser pointing to localhost:9980?Website=https://www.intersystems.com/ using GET. Choose any website changing https://www.intersystems.com/ to any site (e.g.: yoursite.com)
+
+5. Go to the [NLP Domain Explorer](http://localhost:52773/csp/IRISAPP/_iKnow.UI.KnowledgePortal.zen?$NAMESPACE=IRISAPP&domain=1)
+
+6. Analyze the texts and enjoy!
