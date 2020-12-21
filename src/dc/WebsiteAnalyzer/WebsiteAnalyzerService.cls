@@ -3,7 +3,7 @@ Class dc.WebsiteAnalyzer.WebsiteAnalyzerService Extends Ens.BusinessService
 
 // extends Ens.BusinessService to create a custom Business service using Object Script
 
-// This class receive a website from a multipart http request to analyze
+// This class receive a website from a multipart http request to analyze 
 
 // HTTP.InboundAdapter allows you get data from an http request
 
@@ -21,7 +21,7 @@ Parameter SETTINGS = "Depth,TotalPages";
 
 Method OnInit() As %Status
 {
-    Set ..ADAPTER.ParseBodyFormVars=1
+    Set ..Adapter.ParseBodyFormVars=1
     Quit 1
 }
 
@@ -49,6 +49,5 @@ Method OnProcessInput(pInput As %GlobalCharacterStream, pOutput As %RegisteredOb
 
     Quit tsc
 }
-
 
 }
