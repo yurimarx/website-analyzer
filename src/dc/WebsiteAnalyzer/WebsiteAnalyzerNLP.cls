@@ -7,7 +7,7 @@ XData Domain [ XMLNamespace = "http://www.intersystems.com/iknow" ]
 <parameter name="DefaultConfig" value="WebsiteAnalyzerDomain.Configuration" isList="false" />
 <data dropBeforeBuild="true">
 <files listname="File_1" batchMode="false" disabled="false" listerClass="%iKnow.Source.File.Lister" path="/var/crawler/nlp/" recursive="false" extensions="txt">
-<parameter value="/var/crawler/nlp/" isList="false" />
+<parameter value="/var/crawler/nlp/" isList="false" /> 
 <parameter isList="false" />
 <parameter value="0" isList="false" />
 </files>

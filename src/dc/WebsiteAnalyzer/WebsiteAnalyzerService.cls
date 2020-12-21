@@ -33,19 +33,23 @@ Method OnProcessInput(pInput As %GlobalCharacterStream, pOutput As %RegisteredOb
 {
     Set tsc=$$$OK
 
-    Set website=pInput.Attributes("Params","website",1)
+    Set website=pInput.Attributes("Params","Website",1)
    
     //create request object to send
     Set tRequest=##class(dc.WebsiteAnalyzer.WebsiteAnalyzerRequest).%New()
     Set tRequest.Website = website
     Set tRequest.Depth = ..Depth
-    Set tRequest.Pages = ..TotalPages
+    Set tRequest.Pages = ..TotalPages 
 
     //send to lookup process
     Set tsc=..SendRequestSync("WebsiteAnalyzerOperation",tRequest,.tResponse, 120000)
 
+    Set message = tResponse.StringValue
+    
+    Do ##class(dc.WebsiteAnalyzer.WebsiteAnalyzerNLP).%Build()  
+
     //define output for OnProcessInput 
-    Set pOutput=tResponse.StringValue
+    Set pOutput = message
 
     Quit tsc
 }
