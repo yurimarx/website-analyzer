@@ -58,9 +58,9 @@ public class CrawlerUtil extends WebCrawler {
             try {
 				
 				if(OS.indexOf("win") >= 0) {
-					file = new File("c:\\crawler\\" + UUID.randomUUID().toString() + ".txt");
+					file = new File("c:\\crawler\\nlp" + UUID.randomUUID().toString() + ".txt");
 				} else {
-					file = new File("/var/crawler/" + UUID.randomUUID().toString() + ".txt");
+					file = new File("/var/crawler/nlp/" + UUID.randomUUID().toString() + ".txt");
 				}
 				
 				outputStream = new FileOutputStream(file);

@@ -31,9 +31,9 @@ Method OnInit() As %Status
 
 Method OnProcessInput(pInput As %GlobalCharacterStream, pOutput As %RegisteredObject) As %Status
 {
-    set tsc=$$$OK
+    Set tsc=$$$OK
 
-    Set website=pInput.Read(,.tsc)
+    Set website=pInput.Attributes("Params","Website",1)
    
     //create request object to send
     Set tRequest=##class(dc.WebsiteAnalyzer.WebsiteAnalyzerRequest).%New()

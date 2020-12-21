@@ -72,4 +72,8 @@ COPY jgw/* /usr/irissys/dev/java/lib/JDK18/
 
 RUN mkdir -p /var/crawler/
 
+RUN mkdir -p /var/crawler/nlp
+
 RUN mkdir -p /var/crawler/storage
+
+RUN chmod -R 777 /var/crawler/
