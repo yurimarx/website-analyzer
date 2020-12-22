@@ -5,6 +5,9 @@ This is an InterSystems IRIS NLP Website Analyzer. It extracts all HTML content 
 
 This application receive a URL, use a Crawler to extract all website content and analyze it using NLP  
 
+## Website-Analyzer - IRIS NLP and Crawler4J in action!
+<img src="https://github.com/yurimarx/website-analyzer/raw/master/crawler-website-analizer.gif" alt="IRIS NLP and Crawler4J in action">
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
