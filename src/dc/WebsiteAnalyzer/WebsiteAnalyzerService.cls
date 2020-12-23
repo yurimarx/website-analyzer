@@ -46,7 +46,7 @@ Method OnProcessInput(pInput As %GlobalCharacterStream, pOutput As %RegisteredOb
 
     Set message = tResponse.StringValue
     
-    Do ##class(dc.WebsiteAnalyzer.WebsiteAnalyzerNLP).%Build()  
+    Do ##class(dc.WebsiteAnalyzer.WebsiteAnalyzerNLP).%Build() 
 
     //define output for OnProcessInput 
     Set pOutput = message
