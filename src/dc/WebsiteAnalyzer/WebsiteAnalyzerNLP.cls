@@ -14,7 +14,7 @@ XData Domain [ XMLNamespace = "http://www.intersystems.com/iknow" ]
 </data>
 <matching disabled="false" dropBeforeBuild="true" autoExecute="true" ignoreDictionaryErrors="true" />
 <metadata />
-<configuration name="WebsiteAnalyzerDomain.Configuration" detectLanguage="true" languages="en,pt" userDictionary="WebsiteAnalyzerDomain.Dictionary#1" summarize="true" maxConceptLength="0" />
+<configuration name="WebsiteAnalyzerDomain.Configuration" detectLanguage="true" languages="en,pt,nl,fr,de,es,ru,uk" userDictionary="WebsiteAnalyzerDomain.Dictionary#1" summarize="true" maxConceptLength="0" />
 <userDictionary name="WebsiteAnalyzerDomain.Dictionary#1" />
 </domain>
 }
