@@ -54,6 +54,7 @@ public class WebsiteAnalyzerOperation extends BusinessOperation {
 
 		CrawlConfig config = new CrawlConfig();
 		config.setCrawlStorageFolder(CRAWL_STORAGE);
+		config.setIncludeHttpsPages(true);
 		config.setMaxDepthOfCrawling(MAX_CRAWL_DEPTH);
 
 		PageFetcher pageFetcher = new PageFetcher(config);
