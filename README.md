@@ -8,6 +8,9 @@ This application receive a URL, use a Crawler to extract all website content and
 ## Website-Analyzer - IRIS NLP and Crawler4J in action!
 <img src="https://github.com/yurimarx/website-analyzer/raw/master/crawler-website-analizer.gif" alt="IRIS NLP and Crawler4J in action">
 
+## Website-Analyzer IRIS BI in action!
+ 
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
@@ -41,5 +44,7 @@ $ docker-compose up -d
 4. Now Open Postman or create a request in a browser pointing to localhost:9980?Website=https://www.intersystems.com/ using GET. Choose any website changing https://www.intersystems.com/ to any site (e.g.: yoursite.com)
 
 5. Go to the [NLP Domain Explorer](http://localhost:52773/csp/IRISAPP/_iKnow.UI.KnowledgePortal.zen?$NAMESPACE=IRISAPP&domain=1)
+
+6. Go to the [BI User Portal](http://localhost:52773/csp/irisapp/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=dc/WebsiteAnalyzer/WebsiteAnalyzerDashboard.dashboard)
 
 6. Analyze the texts and enjoy!
